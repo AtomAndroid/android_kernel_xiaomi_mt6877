@@ -40,6 +40,7 @@ io_pgtable_init_table[IO_PGTABLE_NUM_FMTS] = {
 #ifdef CONFIG_IOMMU_IO_PGTABLE_ARMV7S
 	[ARM_V7S] = &io_pgtable_arm_v7s_init_fns,
 #endif
+extern struct io_pgtable_init_fns io_pgtable_av8l_fast_init_fns;
 #ifdef CONFIG_IOMMU_IO_PGTABLE_FAST
 	[ARM_V8L_FAST] = &io_pgtable_av8l_fast_init_fns,
 #endif

@@ -557,7 +557,7 @@ static void xmusb350_check_usb_ready(struct work_struct *work)
 	xmusb350_get_charger_type(chip, data);
 
 	for (i = 0; i < MAX_CHECK_USB_READY_COUNT; i++) {
-		if (is_usb_rdy(chip->dev))
+		if (is_usb_rdy())
 			break;
 		msleep(150);
 	}
